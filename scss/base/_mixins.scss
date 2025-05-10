@@ -1,0 +1,29 @@
+@use "./variables" as *;
+
+@mixin text-preset-1 {
+  font-family: $ff-barlow;
+  font-size: $fs-20;
+  font-weight: $fw-semibold;
+  line-height: $lh-120;
+}
+
+@mixin text-preset-2 {
+  font-family: $ff-barlow;
+  font-size: $fs-13;
+  font-weight: $fw-medium;
+  line-height: $lh-110;
+}
+
+@mixin text-preset-3 {
+  font-family: $ff-barlow;
+  font-size: $fs-13;
+  font-weight: $fw-medium;
+  line-height: $lh-140;
+}
+
+@mixin text-preset-4 {
+  font-family: $ff-barlow;
+  font-size: $fs-11;
+  font-weight: $fw-medium;
+  line-height: $lh-110;
+}
