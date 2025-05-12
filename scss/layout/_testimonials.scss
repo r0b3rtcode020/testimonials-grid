@@ -1,0 +1,7 @@
+@use "../base/variables" as *;
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-32;
+}
