@@ -27,3 +27,104 @@
   font-weight: $fw-medium;
   line-height: $lh-110;
 }
+
+// Variante de colores
+@mixin color-variants($variant) {
+  @if $variant == "1" {
+    .testimonial__user-avatar {
+      outline: 2px solid $color-purple-300;
+    }
+
+    .testimonial__user-info {
+      color: $color-white;
+
+      &__verified {
+        color: $color-purple-50;
+      }
+    }
+
+    .testimonial__title {
+      color: $color-white;
+    }
+
+    .testimonial__content {
+      color: $color-purple-50;
+    }
+  }
+
+  // --------------------------------------
+  @if $variant == "2" {
+    .testimonial__user-info {
+      color: $color-white;
+
+      &__verified {
+        color: $color-grey-100;
+      }
+    }
+
+    .testimonial__title {
+      color: $color-white;
+    }
+
+    .testimonial__content {
+      color: $color-grey-100;
+    }
+  }
+
+  // --------------------------------------
+  @if $variant == "3" {
+    .testimonial__user-info {
+      color: $color-grey-500;
+
+      &__verified {
+        color: $color-grey-400;
+      }
+    }
+
+    .testimonial__title {
+      color: $color-grey-500;
+    }
+
+    .testimonial__content {
+      color: $color-grey-400;
+    }
+  }
+
+  // --------------------------------------
+  @if $variant == "4" {
+    .testimonial__user-avatar {
+      outline: 2px solid $color-purple-500;
+    }
+
+    .testimonial__user-info {
+      color: $color-white;
+    }
+
+    .testimonial__title {
+      color: $color-grey-200;
+    }
+
+    .testimonial__content {
+      color: $color-grey-100;
+    }
+  }
+
+  // --------------------------------------
+  @if $variant == "5" {
+    .testimonial__user-info {
+      color: $color-grey-500;
+
+      &__verified {
+        color: $color-grey-400;
+      }
+    }
+
+    .testimonial__title {
+      color: $color-grey-500;
+    }
+
+    .testimonial__content {
+      color: $color-grey-400;
+    }
+  }
+}

@@ -1,13 +1,20 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
 
+$testimonial-variants: (
+  // Clase: (bg-color, text-color)
+  "1": $color-purple-500,
+  "2": $color-grey-500,
+  "3": $color-white,
+  "4": $color-dark-blue,
+  "5": $color-white
+);
+
 .testimonial {
   display: flex;
   flex-direction: column;
   gap: $spacing-16;
   padding: $spacing-32;
-  background-color: $color-purple-500;
-  color: $color-white;
   border-radius: $spacing-8;
   box-shadow: $shadow;
 
@@ -20,7 +27,6 @@
       width: 1.75rem;
       height: 1.75rem;
       border-radius: 50%;
-      outline: 2px solid $color-purple-300;
       overflow: hidden;
     }
 
@@ -31,7 +37,6 @@
 
       &__verified {
         @include text-preset-4;
-        color: $color-purple-50;
       }
     }
   }
@@ -42,6 +47,16 @@
 
   &__content {
     @include text-preset-3;
-    color: $color-purple-50;
+  }
+
+  // Genera variantes de colores
+  @each $variant, $value in $testimonial-variants {
+    &--#{$variant} {
+      background-color: $value;
+      grid-area: t-#{$variant};
+
+      // Variante de colores
+      @include color-variants($variant);
+    }
   }
 }

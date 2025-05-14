@@ -1,7 +1,12 @@
 @use "../base/variables" as *;
 
 .testimonials {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: $spacing-32;
+  grid-template-areas:
+    "t-1"
+    "t-2"
+    "t-3"
+    "t-4"
+    "t-5";
 }
