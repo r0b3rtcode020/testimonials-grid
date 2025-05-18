@@ -82,7 +82,7 @@ textarea {
 /* Fin reset básico */
 .testimonials {
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem 2rem;
   margin: 0 auto;
   grid-template-areas: "t-1" "t-2" "t-3" "t-4" "t-5";
 }
@@ -174,7 +174,14 @@ textarea {
   .testimonial--1 {
     background-image: url("../images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
-    background-position: 70% 0;
+    background-position: 69% 0;
+  }
+}
+@media (width >= 1280px) {
+  .testimonial--1 {
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 86% 0;
   }
 }
 .testimonial--2 {

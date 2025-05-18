@@ -62,7 +62,15 @@ $testimonial-variants: (
         @if $variant == "1" {
           background-image: url("../images/bg-pattern-quotation.svg");
           background-repeat: no-repeat;
-          background-position: 70% 0;
+          background-position: 69% 0;
+        }
+      }
+
+      @media (width >= 1280px) {
+        @if $variant == "1" {
+          background-image: url("../images/bg-pattern-quotation.svg");
+          background-repeat: no-repeat;
+          background-position: 86% 0;
         }
       }
     }
