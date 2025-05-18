@@ -57,6 +57,14 @@ $testimonial-variants: (
 
       // Variante de colores
       @include color-variants($variant);
+
+      @media (width >= 768px) {
+        @if $variant == "1" {
+          background-image: url("../images/bg-pattern-quotation.svg");
+          background-repeat: no-repeat;
+          background-position: 70% 0;
+        }
+      }
     }
   }
 }
